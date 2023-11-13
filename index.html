@@ -1,0 +1,96 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>The Planet Studio  | Fitness Equipment Store</title>
+</head>
+<body  onload="populateData()">
+
+  <!---Navbar--->
+
+  <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+    
+                <img src="img/logo.png" width="175px">
+            </div>
+            <nav>
+                <!--<ul id="MenuItems">
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>-->
+            </nav>
+            <input type="text" id="searchInput" placeholder="Search products..." oninput="filterProducts()">
+        </div>
+
+               <!---Container--->
+
+               <div class="row">
+                <div class="col-2">
+                    <h1>Wake up beauty its time <br>to beast</h1>
+                    <p>Success isn't always about greatness. It's about
+                        consistency. Consistent<br>hard work gains sucess. greatness
+                        will come.</p>
+                    </p>
+                    <a href="" class="btn">Explore Now</a>
+                </div>
+                <div class="col-2">
+                    <img src="img/homepage_image.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <header>
+    <h1>FitFlex Featured Products</h1>
+  </header>
+<!-- Add this HTML input field where you want the search filter -->
+<!-- <input type="text" id="searchInput" placeholder="Search products..." oninput="filterProducts()">-->
+
+    <ul class="content"></ul>
+    <div id="myModall" class="modall">
+      <span class="crossMark" onclick="closeModal()">&times;</span>
+      <p id="modalContent"></p>
+    </div>
+
+   
+    <div id="reservationModal" class="modal">
+      <span class="crossMark" onclick="closeReservationModal()">&times;</span>
+      <h2>Reservation Form</h2>
+      <form onsubmit="return submitReservationForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+  
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" required>
+  
+        <label for="address">Address:</label>
+        <textarea id="address" required></textarea>
+  
+        <p id="productName"></p>
+        <img id="productImage" src="" alt="Selected Product">
+  
+        <input type="hidden" id="productId">
+  
+        <button type="submit">Submit Reservation</button>
+      </form>
+    </div>
+  <!-- Script to handle product information -->
+<!-- main scripts -->
+  <script src="./display.js"></script>
+  <script src="productInfo.js"></script>
+  <!-- main scripts -->
+</body>
+</html>
