@@ -1,0 +1,452 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/*---Navbar---*/
+
+.navbar{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul{
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+a{
+  text-decoration: none;
+  color: #555;
+}
+p{
+  color: #555;
+}
+
+
+/*---Container---*/
+
+.container{
+  max-width: 900px;
+  margin: auto;
+  padding-left: 25px;
+   padding-right: 25px;
+}
+#product-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+.col-2{
+  flex-basis: 50%;
+  min-width: 300px;
+}
+.col-2 img{
+  max-width: 100%;
+  padding: 50px 0;
+}
+.col-2 h1{
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+.btn{
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+.btn:hover{
+  background: #563434;
+}
+.header{
+  background: radial-gradient(#fff, #ffd6d6);
+}
+.header .row{
+  margin-top: 7px;
+}
+.categories{
+  margin: 70px 0;
+}
+.col-3{
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+.col-3 img{
+  width: 100%;
+}
+
+.small-container{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#product-details{
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+.col-4 img{
+  width: 100%;
+}
+.col-4:hover{
+  transform: translate(-5px);
+}
+
+/*---- Offer -----*/
+
+.offer{
+  background: radial-gradient(#fff, #ffd6d6);
+  margin-top: 80px;
+  padding: 30px 0;
+}
+.col-2 .offer-img{
+  padding: 50px;
+}
+small{
+  color: #555
+}
+
+/*---Footer---*/
+
+.footer{
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+.footer p{
+  color: #8a8a8a;
+}
+.footer h3{
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.footer-col-1{
+  flex-basis: 30%
+}
+.footer-col-2{
+  flex: 1;
+  text-align: center;
+}
+.footer-col-2 img{
+  width: 180px;
+  margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+  flex-basis: 12%;
+  text-align: center;
+}
+ul{
+  list-style-type: none;
+}
+.app-logo{
+  margin-top: 20px;
+}
+.app-logo img{
+  width: 140px;
+}
+.footer hr{
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+.copyright{
+  text-align: center;
+}
+.menu-icon{
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+/*---Media Query for Menu*/
+
+@media only screen and (max-width: 800px){
+
+  nav ul{
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background: #333;
+      width: 100%;
+      overflow: hidden;
+      transition: max-height 0.5s;
+  }
+  nav ul li{
+      display: block;
+      margin-right: 50px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  nav ul li a{
+      color: #fff;
+  }
+  .menu-icon{
+      display: block;
+      cursor: pointer;
+  }
+}
+
+
+/* JS Swiper*/
+
+.js-container{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper{
+  width: 80%;
+  height: fit-content;
+}
+.swiper-slide{
+  width: 100%;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+  color: #fff;
+}
+.swiper .swiper-pagination-bullet-active{
+  background: #fff;
+}
+
+
+
+#product-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  flex: 0 0 calc(30% - 20px);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-details {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  /*display: flex;
+  flex-wrap: wrap;*/
+}
+
+.content li{
+  width: 30%;
+  margin-right: 1%;
+}
+
+.content li div{
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.content li div img{
+  width: 100%;
+  height: 150px;
+  cursor: pointer;
+}
+
+
+
+.crossMark {
+  cursor: pointer;
+  float: right;
+}
+/* Add this CSS to your existing stylesheet */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the products horizontally */
+  max-width: 1200px; /* Set a maximum width for the products */
+  margin: 0 auto; /* Center the products on the screen */
+}
+
+.content li {
+  flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+  /* Add margin at the bottom for spacing between rows */
+}
+
+.content li div {
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+  background-color: #f0f0f0; /* Set a background color for the product container */
+}
+
+.content li div img {
+  width: 100%;
+  height: 150px;
+  cursor: pointer;
+}
+
+/* Rest of your existing styles */
+
+
+/* Code for Reservation page styling */
+
+{
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#reservationModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  background-color: #808080;
+
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+}
+
+#productImage {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+/* Media Query for the Reservation Modal */
+
+@media only screen and (max-width: 600px) {
+  #reservationModal {
+      width: 80%;
+  }
+}
+
+
+
+/* Star Rating */
+
+.star-rating {
+      display: flex;
+      margin-top: 10px;
+      text-align: center;
+}
+       /* Adjust the margin as needed */
+    
+
+    .star {
+      color: #FFD700; /* Set the color of the stars */
+      font-size: 20px; /* Set the font size of the stars */
+      margin-right: 5px; /* Adjust the margin between stars as needed */
+    }

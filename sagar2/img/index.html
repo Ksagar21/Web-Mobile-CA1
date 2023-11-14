@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dumbbell Central | Fitness Equipment Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<body>
+
+    <!---Navbar--->
+
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+    
+                <img src="images/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+            <input type="text" id="search-input" placeholder="Search">
+        </div>
+
+       
+
+
+            <!---Container--->
+
+        <div class="row">
+            <div class="col-2">
+                <h1>Wake up beauty its time <br>to beast</h1>
+                <p>Success isn't always about greatness. It's about
+                    consistency. Consistent<br>hard work gains sucess. greatness
+                    will come.</p>
+                </p>
+                <a href="" class="btn">Explore Now</a>
+            </div>
+            <div class="col-2">
+                <img src="images/homepage_image.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--- Featured Categories--->
+
+<!-- <div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="images/category_1.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images/category_2.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images/category_3.jpg">
+            </div>
+        </div>
+    </div>
+    
+</div> -->
+
+<!--- Featured Products--->
+
+<div class="small-container">
+    <h2>Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <div id="product-container"></div>
+            <div id="product-details" style="display: none;"></div>
+        </div>
+    </div>
+
+            <!-- <img src="images/product_1.jpg">
+            <h4>Dumbbell | 10kg</h4>
+            <p>€25.00</p>
+        </div>
+        <div class="col-4">
+             <img src="images/product_2.jpg">
+            <h4>Deluxe Utility Weight Bench</h4>
+            <p>€129.00</p>
+        </div>
+        <div class="col-4">
+           <img src="images/product_3.png">
+            <h4>Indoor Exercise Bike</h4>
+            <p>€299.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product_4.jpg">
+            <h4>Kettlebell | 16kg</h4>
+            <p>€23.00</p> -->
+        
+ 
+      
+
+         <!-- <h2 class="title">Latest Products</h2>
+        <div class="row"> -->
+            <!-- <div class="col-4"> -->
+                <!-- <img src="images/latest_product_1.jpg">
+                <h4>Black Rubber Bumper Plate | 5kg</h4>
+                <p>€19.95</p>
+            </div>
+            <div class="col-4">
+                <img src="images/latest_product_2.jpg">
+                <h4>Resistance Loop Band Set | 5-in-1</h4>
+                <p>€32.99</p>
+            </div>
+            <div class="col-4">
+                <img src="images/latest_product_3.jpg">
+                <h4>Yoga Mat | 4mm Blue</h4>
+                <p>€22.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/latest_product_4.jpg">
+                <h4>Strength Bag | 15kg</h4>
+                <p>€44.95 </p> -->
+            </div>
+    </div>
+</div> 
+    
+
+   
+    
+
+<!---Offer--->
+
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+         
+
+                <!---JS Image Slider--->
+
+<div class="js-container">
+
+    <div class="swiper">
+<!-- Additional required wrapper -->
+<div class="swiper-wrapper">
+
+<!-- Slides -->
+<div class="swiper-slide"><img src="images/exclusive_img_1.webp"></div>
+<div class="swiper-slide"><img src="images/exclusive_img_2.webp"></div>
+<div class="swiper-slide"><img src="images/exclusive_img_3.webp"></div>
+...
+</div>
+
+<!-- If we need pagination -->
+<div class="swiper-pagination"></div>
+                      
+<!-- If we need navigation buttons -->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+                      
+<!-- If we need scrollbar -->
+<div class="swiper-scrollbar"></div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+
+
+const swiper = new Swiper('.swiper', {
+    autoplay:{
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+ 
+  loop: true,
+
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true
+  },
+
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+</script>
+            </div>
+            <div class="col-2">
+                <p>Exclusively Available on Dummbell Central</p>
+                <h1>Fitness Athletic Pack 120kg | Rack - Bench - Radial Plates</h1>
+                <small>Fitness Athletic Pack is perfect for home gym use.
+                    All Fitness power racks are easy to assemble and simple to install in any home.
+                    A massive variety of resistance exercises can be performed using this power rack 
+                    including; Shrugs, Squats, Chest Presses, Shoulder Presses, Chin ups,
+                    Pull-ups, deadlifts, rack pulls and lunges.
+                </small>
+                <a href="" class="btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---Footer--->
+<footer id="footer">
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android & iOS.</p>
+                <div class="app-logo">
+                    <img src="images/app-store.png">
+                    <img src="images/play-store.png">
+                </div>
+
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo.png" width="125px">
+                <p>Our purpose is to sustainably make the pleasure
+                    and benefits of sports accesible to many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+               <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+               </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+               <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>Youtube</li>
+               </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023</p>
+    </div>
+</div>
+</footer>
+
+<!--- JS for Toggle Menu--->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";   
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
